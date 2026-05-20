@@ -1,0 +1,18 @@
+pipeline {
+    agent any
+
+    stages {
+
+        stage('Clonar repositorio') {
+            steps {
+                echo 'Repositorio clonado'
+            }
+        }
+
+        stage('Prueba') {
+            steps {
+                echo 'Webhook funcionando correctamente'
+            }
+        }
+    }
+}
